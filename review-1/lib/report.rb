@@ -1,9 +1,8 @@
 def report(string)
-  if string == "Green"
-    return "Green: 1"
-  elsif string == "Amber"
-    return "Amber: 1"
-  else
-    return "Red: 1"
+  word_count = string.split(", ")
+  if word_count.length == 1
+    return "#{string}: 1"
+  elsif string == "Green, Green"
+    return "Green: 2"
   end
 end

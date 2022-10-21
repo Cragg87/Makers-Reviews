@@ -19,4 +19,9 @@ RSpec.describe 'report' do
     string = "Green, Green"
     expect(report(string)).to eq "Green: 2"
   end
+
+  it 'returns "Amber: 2"' do
+    string = "Amber, Amber"
+    expect(report(string)).to eq "Amber: 2"
+  end
 end
